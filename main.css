@@ -37,3 +37,9 @@ p1 {
     line-height: 20px;
     color: #333;
 }
+ol {
+    margin-left: 0px;
+    font-size: 25px;
+    line-height: 25px;
+    color: #333;
+}
