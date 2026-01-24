@@ -1,4 +1,175 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seongjoo Min</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        header {
+            background: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-left: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .hero img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            font-family: 'Merriweather', serif;
+            color: var(--primary-color);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            margin-right: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            background: var(--primary-color);
+            color: white;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background: var(--accent-color); }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div style="font-size: 1.2rem; font-weight: 700;">Seongjoo Min</div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#teaching">Teaching</a>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="about" class="hero">
+        <img <img src="https://github.com/seongjoo-min/seongjoo-min.github.io/raw/master/profile_photo.jpg" width="500" height="529" alt="Seongjoo Min">
+        <div>
+            <h1>Seongjoo Min</h1>
+            <p>I am a researcher focusing on econometrics, empirical industrial organization, and network formation.</p>
+            <div style="margin-top: 20px;">
+                <a href="http://docs.google.com/gview?url=https://github.com/seongjoo-min/seongjoo-min.github.io/raw/master/CV_Seongjoo.pdf" class="btn">Curriculum Vitae</a>
+                <a href="mailto:seongjoom@gmail.com" class="btn">Email</a>
+                <a href="https://www.linkedin.com/in/seongjoo-min-023744315/" class="btn">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <h2>Research</h2>
+		<div class="card">
+        	<h3>Network of Loyalty Programs: A Sequential Formation</h3>
+        	<p>By forming partnerships with hotel chains and airlines, major credit card issuers in the U.S. allow customers to transfer points from their loyalty programs to the partners'. Hotel chains form similar partnerships with airlines, and airlines with other airlines. Viewing their partnerships as a network and using a sequential network formation model, this article studies how credit card issuers and hotel chains strategically choose to add, delete, or maintain partnerships with airlines. Using a novel dataset that involves 3 credit card issuers, 7 hotel chains, and 43 airlines from 2014 to 2018, the estimation result suggests that a credit card issuer is more likely to form a partnership with an airline that (1) is a partner of another credit card issuer (2) is a partner of its hotel chain partner (3) better complements its existing portfolio of airline partners, after accounting for key characteristics of firms. The first two results are similar when hotel chains choose airline partners.</p>
+        	<a href="http://docs.google.com/gview?url=https://github.com/seongjoo-min/seongjoo-min.github.io/raw/master/Network_of_Loyalty_Programs.pdf" style="color: var(--accent-color);">Download Paper PDF &rarr;</a>
+        </div>
+		<div class="card">
+        	<h3>Dyadic Regression with Block-Specific Fixed Effects and Application to Input-Output Matrix</h3>
+        	<p>Viewing the Input-Output matrix as a network of industries, this article studies how exogenous shocks, such as changes in tax rates and import duty rates, can affect relationships between industries within the U.S. economy. It also proposes a method for making counterfactual predictions on the Input-Output Matrix. A key innovation is utilizing a stochastic blockmodel to group industries into blocks, so that pairs of industries that belong to the same pair of blocks share common pairwise block-specific fixed effects. It uses dyadic regression model to estimate model parameters, together with pairwise block-specific fixed effects. An empirical analysis using the 2017 U.S. Input-Output Matrix shows that the supplier-buyer relationship between commodities (or industries) are sensitive to changes in net tax rates and import duty rates.</p>
+        	<a href="http://docs.google.com/gview?url=https://github.com/seongjoo-min/seongjoo-min.github.io/raw/master/Dyadic_Regression_with_Block-Specific_Fixed_Effects_and_Application_to_Input-Output_Matrix.pdf" style="color: var(--accent-color);">Download Paper PDF &rarr;</a>
+        </div>
+		<div class="card">
+            <h3>Communities and Centralities of Supplier-Buyer Network of the U.S. Tech Sector</h3>
+            <p>Analysis of the U.S. tech sector's supplier-buyer network shows a strengthening of ecosystems around major firms from 2003 to 2014. Community detection methods reveal four distinct ecosystems, each led by AAPL, DELL, IBM, and MSFT. Supplier-buyer interactions within each ecosystem is far greater than across ecosystems, indicating exclusivity in suppliers and buyers around each of the four firms. Moreover, the substantial growth of AAPL and MSFT's significance, or centrality, in the network and their ecosystems underscore their rising dominance within the U.S. tech sector.</p>
+            <a href="http://docs.google.com/gview?url=https://github.com/seongjoo-min/seongjoo-min.github.io/raw/master/Communities_and_Centralities_in_Supplier-Buyer_Network_of_the_U.S._Tech_Sector.pdf" style="color: var(--accent-color);">Download Paper PDF &rarr;</a>
+        </div>
+    </section>
+
+    <section id="teaching">
+        <h2>Teaching</h2>
+        <div class="card">
+            <h3>Applied Econometrics (Undergraduate)</h3>
+            <p>Course description and your role (Instructor/TA).</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 Seongjoo Min. Built with HTML/CSS.
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Seongjoo Min</title>
